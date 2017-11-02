@@ -1,0 +1,12 @@
+APScheduler
+PyEventEmitter
+requests
+paho-mqtt
+simplejson
+bottle
+twisted
+pyopenssl
+service_identity
+idna
+autobahn
+certifi
