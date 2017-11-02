@@ -1,5 +1,9 @@
 {
   "kit": "grove",
   "CODE": "4321",
+<<<<<<< HEAD
   "PLATFORM": "firmata"
+=======
+  "PLATFORM":"firmata"
+>>>>>>> origin/master
 }
