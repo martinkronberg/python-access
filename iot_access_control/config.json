@@ -1,4 +1,5 @@
 {
   "kit": "grove",
-  "CODE": "4321"
+  "CODE": "4321",
+  "PLATFORM":"firmata"
 }
