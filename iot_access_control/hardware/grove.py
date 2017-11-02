@@ -22,6 +22,7 @@
 from __future__ import print_function
 from upm.pyupm_jhd1313m1 import Jhd1313m1
 from upm.pyupm_biss0001 import BISS0001
+from upm import pyupm_button as button
 from mraa import addSubplatform, GENERIC_FIRMATA
 from ..config import HARDWARE_CONFIG, KNOWN_PLATFORMS
 from .board import Board, PinMappings
@@ -48,7 +49,7 @@ class GroveBoard(Board):
             self.pin_mappings += 512
             self.pin_mappings.i2c_bus = 512
 
-        self.motion = BISS0001(self.pin_mappings.motion_pin)
+        self.motion = button.Button(4+512)
         self.screen = Jhd1313m1(self.pin_mappings.i2c_bus, 0x3E, 0x62)
 
         self.last_motion = False
@@ -74,7 +75,7 @@ class GroveBoard(Board):
         Check PIR motion sensor.
         """
 
-        return self.motion.motionDetected()
+        return self.motion.value()
 
     def write_message(self, message, line=0):
 
