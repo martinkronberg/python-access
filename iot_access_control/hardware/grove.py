@@ -62,7 +62,6 @@ class GroveBoard(Board):
 
         # detect motion change
         current_motion = self.detect_motion()
-	print (current_motion)
         if current_motion != self.last_motion:
             if current_motion:
                 self.trigger_hardware_event(MOTION_DETECTED)
