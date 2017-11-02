@@ -20,4 +20,4 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # hardware events
-MOTION_DETECTED = "alarm-activated"
+MOTION_DETECTED = "motion-detected"

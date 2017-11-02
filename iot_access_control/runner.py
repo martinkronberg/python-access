@@ -79,7 +79,7 @@ class Runner(object):
             """
 
             if not self.motion_detected:
-                log("motion-detected")
+                log("alarm-acitvated")
                 self.motion_detected = True
                 self.previous_time = datetime.utcnow()
 
